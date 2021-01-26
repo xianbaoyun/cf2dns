@@ -5,7 +5,7 @@ on:
     branches: 
       - master
   schedule:
-    - cron: '*/25 * * * *'
+    - cron: '*/16 * * * *'
 
 jobs:
   build:
@@ -26,4 +26,3 @@ jobs:
           SECRETID: ${{ secrets.SECRETID }}
           SECRETKEY: ${{ secrets.SECRETKEY }}
         run: python cf2dns_actions.py
-
